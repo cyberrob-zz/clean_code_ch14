@@ -171,7 +171,8 @@ public class Args {
     }
 
     public boolean getBoolean(char arg) {
-        return falseIfNull(booleanArgs.get(arg).getBoolean());
+        ArgumentMarshaler am = booleanArgs.get(arg);
+        return am != null && am.getBoolean();
     }
 
     private boolean falseIfNull(Boolean b) {
