@@ -92,6 +92,7 @@ public class ArgsException extends Exception {
         MISSING_DOUBLE,
         MISSING_STRING_ARRAY,
         INVALID_INTEGER,
-        INVALID_DOUBLE
+        INVALID_DOUBLE,
+        INVALID_FORMAT
     }
 }
